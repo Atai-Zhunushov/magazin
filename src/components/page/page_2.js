@@ -8,7 +8,7 @@ const Page_2 = () => {
     return (
         <div>
             <Header/>
-            <SectionImage1/>
+            <SectionImage1 />
             <Footer/>
         </div>
     );

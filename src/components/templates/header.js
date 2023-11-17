@@ -9,7 +9,6 @@ import Modal from "../atoms/atomic/modal";
 import Magazin from "../atoms/atomic/magaz";
 import Header_4_2 from "../atoms/atomic/header_4_2";
 import Header_4_3 from "../atoms/atomic/header_4_3";
-import Header44 from "../atoms/atomic/header_4_4";
 import Header_4_4 from "../atoms/atomic/header_4_4";
 import {removeItemCart} from "../../store/cartSlice";
 import {useDispatch, useSelector} from "react-redux";
@@ -41,21 +40,23 @@ const Header = () => {
         dispatch(removeItemCart(itemId));
     }
     return (
-        <div className='div_img'>
-            <img src={image11} alt=""/>
-            <Header_1/>
-            <Header_2/>
-            <Header_3/>
-            <div className='header_4'>
-                <Header_4 onOpenModal={onOpenModal}/>
-                <Header_4_2/>
-                <Header_4_3/>
-                <Header_4_4 onOpenShop={openMagaz} count={cardItem.length > 0 && cardItem.length}/>
-                {cardItem.length > 0 && openMagazin && <Magazin selectedItems={cardItem} close={closeMagaz} openModal={openMagazin} removeItem={removeItem}/>}
+        <div className='container_img'>
+            <div className='div_img'>
+                <img src={image11} alt="" className="header_img"/>
+                <Header_1/>
+                <Header_2/>
+                <Header_3/>
+                <div className='header_4'>
+                    <Header_4 onOpenModal={onOpenModal}/>
+                    <Header_4_2/>
+                    <Header_4_3/>
+                    <Header_4_4 onOpenShop={openMagaz} count={cardItem.length > 0 && cardItem.length}/>
+                    {cardItem.length > 0 && openMagazin && <Magazin selectedItems={cardItem} close={closeMagaz} openModal={openMagazin} removeItem={removeItem}/>}
 
+                </div>
+                <Header_5/>
+                <Modal openModal={open} close={closeModal} />
             </div>
-            <Header_5/>
-            <Modal openModal={open} close={closeModal} />
         </div>
     );
 };

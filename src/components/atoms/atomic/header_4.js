@@ -7,7 +7,7 @@ const Header4 = ({onOpenModal}) => {
     return (
         <div>
             <div>
-                <img src={user} alt="" onClick={onOpenModal}/>
+                <img src={user} alt="" onClick={onOpenModal} className="header_img_list"/>
             </div>
         </div>
     );

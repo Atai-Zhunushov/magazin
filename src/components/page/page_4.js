@@ -1,17 +1,16 @@
 import React from 'react';
 import Header from "../templates/header";
 import Footer from "../templates/footer";
-import SectionImage2 from "../templates/section_image2";
+import Section_suits from "../templates/section_suits";
 
-const Page_3 = () => {
-
+const Page4 = () => {
     return (
         <div>
             <Header/>
-            <SectionImage2 />
+            <Section_suits/>
             <Footer/>
         </div>
     );
 };
 
-export default Page_3;
+export default Page4;
