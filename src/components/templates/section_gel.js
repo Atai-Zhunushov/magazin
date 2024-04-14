@@ -56,18 +56,18 @@ const SectionSuits = () => {
     }
 
     const filteredData = allPosts
-        .filter((item) => item.title.toLowerCase().includes('парфюм'))
+        .filter((item) => item.title.toLowerCase().includes('гел'))
         .filter((item) => {
-        const formattedPrice = item.price.replace(/\s+/g, '').replace(',', '.');
-        const isPriceMatchLogic = parseFloat(formattedPrice);
-        return isPriceMatchLogic.toString().includes(filterValue.toLowerCase()) ||
-            item.title.toLowerCase().includes(filterValue.toLowerCase());
+            const formattedPrice = item.price.replace(/\s+/g, '').replace(',', '.');
+            const isPriceMatchLogic = parseFloat(formattedPrice);
+            return isPriceMatchLogic.toString().includes(filterValue.toLowerCase()) ||
+                item.title.toLowerCase().includes(filterValue.toLowerCase());
 
-    })
+        })
     return (
         <div>
             <Input/>
-            <h2 className='page2_h2'>Каталог парфюмов</h2>
+            <h2 className='page2_h2'>Каталог гелей</h2>
             <div className='page_2_div'>
                 {filteredData.map((post) => (
                     <div key={post.id} className='image_page2'>

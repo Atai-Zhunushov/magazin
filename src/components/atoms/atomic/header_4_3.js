@@ -3,7 +3,7 @@ import Vector from '../../../img/instagram.png';
 const Header43 = () => {
     return (
         <div>
-            <a href="https://www.instagram.com/zhunushovatai/"> <img src={Vector} alt=""  className="header_img_list"/></a>
+            <a href="https://www.instagram.com"> <img src={Vector} alt=""  className="header_img_list"/></a>
         </div>
     );
 };

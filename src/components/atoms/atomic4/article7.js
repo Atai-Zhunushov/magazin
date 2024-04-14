@@ -5,7 +5,7 @@ const Article7 = ({addToCart}) => {
         <div className='div_article' style={{position:"relative"}}>
             <div className='div_article_item'>
                 <p className='p_article'>
-                    худи
+                    набор для shower
                 </p>
             </div>
             <div className='div_article_item'>

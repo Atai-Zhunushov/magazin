@@ -39,13 +39,14 @@ const Header1 = () => {
                         <li>Мужское</li>
                     </Link>
 
-                    <Link to={'/page4'}>
-                        <li>костюмы</li>
+                    <Link to={'/page4'} className='li_list'>
+                        <li>парфюмы</li>
                     </Link>
-                    <li>рубашки</li>
-                    <li>футболки</li>
-                    <li>брюки</li>
-                    <li>платья</li>
+                    <Link to={'/page5'} className='li_list'>
+                        <li>гели</li>
+                    </Link>
+
+
                 </ul>
             </div>
 

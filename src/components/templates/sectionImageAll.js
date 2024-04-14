@@ -41,7 +41,7 @@ const SectionImageAll = () => {
     return (
         <div>
             <Input />
-            <Typography variant={isMobile ? 'h6' : 'h3'} color="s" className={isMobile ? "page2_h2_mobile" : 'page2_h2'}>Каталог  одежды</Typography>
+            <Typography variant={isMobile ? 'h6' : 'h3'} color="s" className={isMobile ? "page2_h2_mobile" : 'page2_h2'}>Каталог  косметики</Typography>
             <div className={isMobile ? "page_2_mobile" : 'page_2_div'}>
                 {filteredData.map((post) => (
                     <Card key={post.id} className={isMobile ? 'image2-mobile' : 'image_page2'}>

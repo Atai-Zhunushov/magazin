@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import image11 from '../../img/image11.jpg'
+import image11 from '../../image_sher/pexels-houzlook-com-3356416.jpg'
 import Header_1 from "../atoms/atomic/header_1";
 import Header_2 from "../atoms/atomic/header_2";
 import Header_3 from "../atoms/atomic/header_3";
